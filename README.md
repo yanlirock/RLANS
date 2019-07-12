@@ -27,14 +27,14 @@ the "--save" specifies the direction where you want save your RLANS model, and t
 
 4)For comparison, you can also train a text classification model just with labeled, without specify the pretrained language model
 ```
-python classifier_training.py --cuda --lr=0.01 --batch_size=128 --save='/classify_no_pre/' --pre_train='' --number_per_class=1000 --reduce_rate=0.95
+python classifier_training.py --cuda --lr=0.001 --batch_size=128 --save='/classify_no_pre/' --pre_train='' --number_per_class=1000 --reduce_rate=0.95
 ```
 the "--save" specifies the direction where you want save the LSTM based text classification model, and the testing result of each epoch. 
 
 
 4)For comparison, you can train the semisupervised sequence learning model (SSL), without the pretrained language model
 ```
-python classifier_training.py --cuda --lr=0.01 --batch_size=128 --save='/classify_with_pre/' --pre_train='/ag_lm_model' --number_per_class=1000 --reduce_rate=0.95
+python classifier_training.py --cuda --lr=0.001 --batch_size=128 --save='/classify_with_pre/' --pre_train='/ag_lm_model' --number_per_class=1000 --reduce_rate=0.95
 ```
 the "--save" specifies the direction where you want save the SSL model, and the testing result of each epoch. 
 
