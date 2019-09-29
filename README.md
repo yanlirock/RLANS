@@ -11,7 +11,7 @@ python split_labeled_unlabeled.py
 
 2)You should training the language model
 ```
-python language_model_training.py --cuda --batch_size=32 --lr=0.01 --save='/ag_lm_model/'
+python language_model_training.py --cuda --batch_size=32 --lr=0.01 --reduce_rate=0.9 --save='/ag_lm_model/'
 ```
 the "--save" specifies the direction where you want save your pretrained language model. 
 
