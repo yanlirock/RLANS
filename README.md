@@ -27,19 +27,12 @@ the "--save" specifies the direction where you want save your RLANS model, and t
 This model refers to the paper
 
 @inproceedings{li2018learning,
-
   title={Learning adversarial networks for semi-supervised text classification via policy gradient},
-  
   author={Li, Yan and Ye, Jieping},
-  
   booktitle={Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
-  
   pages={1715--1723},
-  
   year={2018},
-  
-  organization={ACM}
-  
+  organization={ACM}  
 }
 
 4)For comparison, you can also train a text classification model just with labeled, without specify the pretrained language model
@@ -55,7 +48,7 @@ python classifier_training.py --cuda --lr=0.001 --batch_size=128 --save='/classi
 ```
 the "--save" specifies the direction where you want save the SSL model, and the testing result of each epoch. 
 
-This model refers to the paper.
+This model refers to the paper
 
 @inproceedings{dai2015semi,
   title={Semi-supervised sequence learning},
