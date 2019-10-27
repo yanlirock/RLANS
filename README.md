@@ -58,3 +58,4 @@ This model refers to the paper:
   year={2015}
 }
 ```
+Note: this is a reproduced pytorch code to show the mode and ideals in the paper "Learning adversarial networks for semi-supervised text classification via policy gradient", which might not reproduce the results in the Table 3 of the paper. However, this can prove that the RLANS model outperforms the standard LSTM model and SSL model.
