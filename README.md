@@ -24,8 +24,8 @@ the "--pre_train" specifies the direction where your pretrained language model h
 
 the "--save" specifies the direction where you want save your RLANS model, and the testing result of each epoch. 
 
-This model refers to the paper
-
+This model refers to the paper:
+```
 @inproceedings{li2018learning,
   title={Learning adversarial networks for semi-supervised text classification via policy gradient},
   author={Li, Yan and Ye, Jieping},
@@ -34,7 +34,7 @@ This model refers to the paper
   year={2018},
   organization={ACM}  
 }
-
+```
 4)For comparison, you can also train a text classification model just with labeled, without specify the pretrained language model
 ```
 python classifier_training.py --cuda --lr=0.001 --batch_size=128 --save='/classify_no_pre/' --pre_train='' --number_per_class=1000 --reduce_rate=0.95
@@ -48,8 +48,8 @@ python classifier_training.py --cuda --lr=0.001 --batch_size=128 --save='/classi
 ```
 the "--save" specifies the direction where you want save the SSL model, and the testing result of each epoch. 
 
-This model refers to the paper
-
+This model refers to the paper:
+```
 @inproceedings{dai2015semi,
   title={Semi-supervised sequence learning},
   author={Dai, Andrew M and Le, Quoc V},
@@ -57,4 +57,4 @@ This model refers to the paper
   pages={3079--3087},
   year={2015}
 }
-
+```
